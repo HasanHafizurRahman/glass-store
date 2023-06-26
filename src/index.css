@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-btn {
+  @apply px-2 py-1 m-1 bg-gray-700 text-white border rounded-lg;
+}
+.tab-btn:hover {
+  @apply text-blue-300;
+}
+
+.tab-btn.active {
+  @apply bg-[#4a90e2] text-white;
+}
+
+.table {
+  @apply w-full border-collapse;
+}
+
+.table th,
+.table td {
+  @apply border border-solid  border-[#ccc];
+}
+
+.pagination {
+  @apply flex justify-center mt-1 gap-1;
+}
+
+.page-btn {
+  @apply px-1 py-1 border-solid border-2 border-[#ccc] bg-[#f5f5f5] cursor-pointer rounded-full;
+}
+
+.page-btn.active {
+  @apply bg-[#4a90e2] text-white;
+}
